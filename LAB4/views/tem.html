@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>LAB4</title>
+    <link rel="stylesheet" href="css/tem.css" />
+</head>
+
+<body>
+    <div class="bg">
+        <div class="btn">
+            <a href="/save">
+                <button>新建</button>
+            </a>
+        </div>
+        <div class="out">
+            <% list.forEach(function(item){ %>
+                <div class="in">
+                    <div>
+                        <img src="<%= item.avatar %>" alt="" height="80" width="120" />
+                    </div>
+                    <div><%= item.name %></div>
+                    <div><%= item.id %></div>
+                    <div>
+                        <span>
+                            <a href="/update?id=<%= item.id %>">
+                                <button>修改</button>
+                            </a>
+                        </span>
+                        <span>
+                            <a href="/delete?id=<%= item.id %>">
+                                <button>删除</button>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <% }) %>
+        </div>
+    </div>
+</body>

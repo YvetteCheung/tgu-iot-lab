@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.main{
+    background-color: rgba(209, 215, 221, 0.062);
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px rgba(154, 170, 180, 0.342);
+}
+input{
+    border-color: rgba(212, 212, 212, 0.288);
+    border-width: 1px;
+    border-radius: 3px;
+}
+.style{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.im{
+    width:170px;
+}
+.sub{
+    margin:10px 10px 0 0;
+}
+.style2{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
